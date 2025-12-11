@@ -17,3 +17,4 @@ Using ArchLinux distibution:
 - rofi
 - picom
 - alacritty
+- flameshot

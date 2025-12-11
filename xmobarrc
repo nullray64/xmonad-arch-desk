@@ -1,0 +1,12 @@
+Config { font = "xft:Ubuntu Mono-14"
+       , bgColor = "#282828"
+       , fgColor = "#fafafa"
+       , position = Top
+       , commands = [ Run Date "%H:%M %d/%m" "date" 50
+                    -- Важно: StdinReader слушает вывод от XMonad
+		    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %date%"
+       }

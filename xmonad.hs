@@ -16,7 +16,8 @@ main = do
     xmonad $ myConfig h `additionalKeysP` 
         [ ("M-p", spawn "rofi -show drun") 
         , ("M-S-p", spawn "rofi -show run") -- Опционально: Shift+Mod+p для обычного run
-	, ("M-S-l", spawn "betterlockscreen -l dim")
+	    , ("M-S-l", spawn "betterlockscreen -l dim")
+		, ("<Print>", spawn "flameshot gui")
         ]
 
 myConfig h = desktopConfig {
